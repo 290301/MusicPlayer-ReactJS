@@ -1,0 +1,28 @@
+.wrapper {
+   width: calc(var(--sidebar-width) + var(--content-width));
+   display: flex;
+   background-color: black;
+}
+
+.actionsSong {
+   width: var(--sidebar-width);
+   border-right: 1px solid var(--border-color-sidebar);
+}
+
+.infoSong {
+   width: var(--content-width);
+   color: white;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 0px 60px;
+   & .infoArtist {
+      margin: 0px 20px;
+   }
+   & .progressSong {
+      flex: 1;
+   }
+}
+.progressSong svg path:nth-child(2) {
+   stroke: var(--text-white);
+}

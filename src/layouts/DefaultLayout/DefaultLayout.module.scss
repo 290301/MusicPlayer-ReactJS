@@ -1,0 +1,22 @@
+.app {
+   min-height: 100vh;
+   background-color: var(--bg-app);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.wrapper {
+   border-radius: 6px;
+   overflow: hidden;
+}
+.container {
+   display: flex;
+}
+.content {
+   width: var(--content-width);
+   background-color: var(--bg-content);
+   height: var(--content-height);
+   color: var(--text-white);
+   padding: 20px 0px 20px 60px;
+}

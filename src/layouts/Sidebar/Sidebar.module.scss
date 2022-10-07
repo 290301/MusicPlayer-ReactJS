@@ -1,0 +1,8 @@
+.wrapper {
+   width: var(--sidebar-width);
+   height: Var(--content-height);
+   background-color: var(--bg-sidebar);
+   color: white;
+   padding: 20px 26px;
+   border-right: 1px solid var(--border-color-sidebar);
+}

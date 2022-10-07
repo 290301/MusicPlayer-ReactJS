@@ -1,0 +1,36 @@
+.menu-item {
+   display: block;
+   margin: 10px 0px;
+   padding: 8px 0px;
+   color: var(--text-color-primary);
+   border-radius: 6px;
+   transition: 0.1s ease;
+   font-weight: 500;
+   font-size: 14px;
+
+   &:hover {
+      background-color: var(--bg-item-active);
+      color: #fff;
+      text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34),
+         0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+         0 0 54px rgba(30, 132, 242, 0.92);
+   }
+
+   &.active {
+      background-color: var(--bg-item-active);
+      color: #fff;
+      text-shadow: 0 0 6px rgba(202, 228, 225, 0.92), 0 0 30px rgba(202, 228, 225, 0.34),
+         0 0 12px rgba(30, 132, 242, 0.52), 0 0 21px rgba(30, 132, 242, 0.92), 0 0 34px rgba(30, 132, 242, 0.78),
+         0 0 54px rgba(30, 132, 242, 0.92);
+   }
+   &:active {
+      transform: scale(0.98);
+   }
+}
+
+// icon item
+.menu-item span:nth-child(1) {
+   margin: 0px 12px;
+}
+
+// title item

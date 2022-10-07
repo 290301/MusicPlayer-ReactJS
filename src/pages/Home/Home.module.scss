@@ -1,0 +1,159 @@
+.wrapper {
+}
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-right: 60px;
+
+   & .action-left {
+      flex: 1;
+   }
+}
+.icon-left {
+   margin-right: 40px;
+   color: var(--text-color-primary);
+   transition: 0.1s ease;
+   cursor: pointer;
+
+   &:hover {
+      color: var(--text-white);
+   }
+}
+.icon-right {
+   margin-right: 40px;
+   color: var(--text-color-primary);
+   transition: 0.1s ease;
+   cursor: pointer;
+
+   &:hover {
+      color: var(--text-white);
+   }
+}
+.icon-search {
+   color: var(--text-color-primary);
+   margin-right: 20px;
+}
+.input-search {
+   position: relative;
+   width: 500px;
+   display: inline-block;
+   transition: 0.3s ease;
+
+   & input {
+      width: 22%;
+      outline: none;
+      border: none;
+      font-size: 14px;
+      border-bottom: 1px solid transparent;
+      background-color: transparent;
+      padding: 4px 0px;
+      color: var(--text-white);
+      transition: 0.2s ease;
+   }
+   & input:focus {
+      border-color: white;
+      width: 100%;
+   }
+   & span {
+      position: absolute;
+      top: 3px;
+   }
+   & span svg {
+      animation: spinner 0.4s linear infinite;
+   }
+}
+@keyframes spinner {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.action-right {
+   color: var(--text-color-primary);
+   & span {
+      margin-right: 20px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.1s ease;
+   }
+   & span:hover {
+      color: var(--text-white);
+   }
+}
+.btn-more {
+   cursor: pointer;
+   transition: 0.1s ease;
+   &:hover {
+      color: var(--text-white);
+   }
+}
+
+// Content
+.content {
+}
+.title {
+   margin: 9px 0px 8px 0px;
+   font-weight: 500;
+   font-size: 18px;
+   letter-spacing: 1px;
+   color: var(--text-white);
+}
+.popular-mood {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 60px;
+   gap: 36px;
+}
+.popular {
+   width: 550px;
+}
+// mood
+.mood {
+   flex: 1;
+}
+.mood-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+}
+.grid-item {
+   width: 216px;
+   height: 127px;
+   line-height: 120px;
+   text-align: center;
+   background-color: var(--bg-song);
+   font-size: 14px;
+   border-radius: 6px;
+   color: var(--text-color-primary);
+   transition: 0.1s ease;
+   font-weight: 600;
+
+   &:hover {
+      background-color: var(--bg-item-active);
+      color: var(--text-white);
+      text-shadow: var(--text-shadow-primary);
+      cursor: pointer;
+   }
+
+   &.active {
+      background-color: var(--bg-item-active);
+      color: var(--text-white);
+      text-shadow: var(--text-shadow-primary);
+   }
+}
+
+// Poper
+.popper {
+   min-width: 500px;
+   background-color: var(--bg-song);
+   border-radius: 6px;
+
+   & .empty-data{
+      text-align: center;
+   }
+}

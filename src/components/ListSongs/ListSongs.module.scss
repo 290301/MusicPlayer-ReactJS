@@ -1,0 +1,48 @@
+// List Song
+.wrapper {
+   height: 264px;
+   overflow-y: overlay;
+}
+// Song
+.wrapper-song {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 8px 14px;
+   background-color: var(--bg-song);
+   margin-bottom: 6px;
+   border-radius: 4px;
+   transition: 0.1s ease;
+   cursor: pointer;
+   &:hover {
+      background-color: var(--bg-item-active);
+      color: white;
+   }
+   &.active {
+      background-color: var(--bg-item-active);
+      text-shadow: var(--text-shadow-primary);
+   }
+}
+.song-image {
+   width: 30px;
+   height: 30px;
+   object-fit: contain;
+   margin-right: 14px;
+}
+.song-name {
+   font-size: 14px;
+   color: var(--text-white);
+   flex: 1;
+}
+.btn-more {
+}
+
+// Popper
+.popper {
+   background-color: var(--bg-song);
+   min-width: 200px;
+   min-height: 100px;
+   border-radius: 6px;
+   text-align: center;
+   line-height: 100px;
+}
